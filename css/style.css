@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,700,800&display=swap');
-
 .container{
     width: 1352px;
     margin: 0 auto;
@@ -376,7 +375,7 @@ h3{
     align-items: flex-start;
     justify-content: space-around;
     line-height: 4rem;
-    
+
 }
 .contact__info {
     display: flex;
@@ -453,7 +452,7 @@ button[type=submit] {
     cursor: pointer;
 }
 input[type="checkbox"] {
-    appearance: none;
+    -webkit-appearance: none;
     width: 24px;
     height: 24px;
     display: inline-block;
