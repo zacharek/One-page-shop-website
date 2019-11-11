@@ -360,6 +360,50 @@ h3{
     position: absolute;
     bottom: -25px;
 }
+.prices__basic li:nth-of-type(n)::before{
+    content: "";
+    display: inline-block;
+    background: url("../assets/Ckechmark-1.svg") no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+.prices__basic li:nth-of-type(n+4)::before{
+    content: "";
+    display: inline-block;
+    background: url("../assets/Close.svg") no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 14px;
+}
+.recommended li:nth-of-type(n)::before{
+    content: "";
+    display: inline-block;
+    background: url("../assets/Ckechmark-1.svg") no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+.recommended li:last-of-type::before{
+    content: "";
+    display: inline-block;
+    background: url("../assets/Close.svg") no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+.prices__item li:nth-of-type(n)::before{
+    content: "";
+    display: inline-block;
+    background: url("../assets/Ckechmark-1.svg") no-repeat;
+    background-size: cover;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
 /*Contact  styling */
 #contact .container {
     display: flex;
@@ -370,12 +414,15 @@ h3{
 }
 .contact__details {
     display: flex;
-    width: 100%;
+    width: 30%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
     line-height: 4rem;
 
+}
+.contact__form{
+    width: 30%;
 }
 .contact__info {
     display: flex;
@@ -417,7 +464,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 20%;
+}
+div.checkbox{
+    display: flex;
 }
 .form__fields {
     width: 100%;
@@ -443,19 +492,20 @@ button[type=submit] {
     width: 226px;
     height: 57px;
     border: none;
-    background: #08A6E4 0% 0% no-repeat padding-box;
+    background: #08A6E4 0 0 no-repeat padding-box;
     box-shadow: 5px 10px 14px #07ACE629;
     border-radius: 35px;
     color: #ffffff;
     font-weight: 700;
     font-size: 13px;
     cursor: pointer;
+    margin: 3vh auto;
 }
 input[type="checkbox"] {
     -webkit-appearance: none;
     width: 24px;
     height: 24px;
-    display: inline-block;
+    flex-shrink: 0;
     vertical-align: middle;
     border-radius: 4px;
     background: #ffffff;
